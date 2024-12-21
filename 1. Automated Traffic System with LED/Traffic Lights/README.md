@@ -9,32 +9,23 @@ Step 1: Set Up the Breadboard
   
 Step 2: Connect the Red LED
       Take a jumper wire and connect the longer leg (anode) of the Red LED to pin 16 on the ESP32 board.
-      
       Connect the shorter leg (cathode) of the Red LED to the ground rail (GND) on the breadboard.
       
 Step 3: Connect the Yellow LED
-
       Take another jumper wire and connect the longer leg (anode) of the Yellow LED to pin 17 on the ESP32.
-      
       Connect the shorter leg (cathode) of the Yellow LED to the ground rail (GND) on the breadboard.
       
 Step 4: Connect the Green LED
-
       Take another jumper wire and connect the longer leg (anode) of the Green LED to pin 18 on the ESP32.
-      
       Connect the shorter leg (cathode) of the Green LED to the ground rail (GND) on the breadboard.
       
       
 Step 5: Add Resistors (Optional)
-
       You can add a resistor (220Ω or 330Ω) to each longer leg (anode) of the LEDs to make sure the LEDs don’t burn out.
-      
       Put the resistor between the LED anode (long leg) and the ESP32 pin (16, 17, or 18).
       
 Step 6: Power the ESP32
-
       Plug the USB cable into your computer and the ESP32 board.
-      
       This will power the ESP32 and allow you to upload the program to it.
       
 Step 7: Upload the Code
