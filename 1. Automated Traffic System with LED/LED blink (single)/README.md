@@ -1,33 +1,31 @@
 Step-by-Step Instructions:
-1. Connect the LEDs to the Breadboard:
-Place the 3 LEDs on the breadboard. Make sure each LED has a longer leg (anode) and a shorter leg (cathode). The longer leg (anode) is the positive leg and should be connected to the ESP32 pin.
-2. Wire the Red LED:
-Insert the Red LED on the breadboard. The anode (longer leg) connects to pin 16 on the ESP32.
-The cathode (shorter leg) connects to the ground rail on the breadboard.
-3. Wire the Yellow LED:
-Insert the Yellow LED on the breadboard. The anode (longer leg) connects to pin 17 on the ESP32.
-The cathode (shorter leg) connects to the ground rail on the breadboard.
-4. Wire the Green LED:
-Insert the Green LED on the breadboard. The anode (longer leg) connects to pin 18 on the ESP32.
-The cathode (shorter leg) connects to the ground rail on the breadboard.
-5. Add Resistors (Optional):
-To protect the LEDs, place a 220Ω or 330Ω resistor in series with the anode of each LED (between the LED anode and the ESP32 pin). This step is optional but recommended to limit the current to safe levels.
-6. Connect the ESP32 to the Breadboard:
-Use 3 jumper wires to connect the pins on the ESP32 to the breadboard:
-Pin 16 → Red LED anode
-Pin 17 → Yellow LED anode
-Pin 18 → Green LED anode
-Connect the GND (Ground) pin of the ESP32 to the ground rail of the breadboard.
-7. Power the Circuit:
-Connect the ESP32 NodeMCU to your computer using the USB cable to power the board and upload the code.
-8. Upload the Code:
-Open the Arduino IDE (or another compatible IDE for the ESP32).
-Paste the provided traffic light control code into the IDE.
-Select the correct board (ESP32) and port in the IDE.
-Click Upload to upload the code to the ESP32 board.
-9. Observe the Traffic Light Simulation:
-Once the code is uploaded successfully, the LEDs will start following the traffic light sequence:
-Red LED will turn on for 5 seconds.
-Yellow LED will turn on for 2 seconds.
-Green LED will turn on for 5 seconds.
-The sequence will repeat.
+1.  Prepare the Breadboard and NodeMCU:
+
+    Place the breadboard on your work surface.
+    Put the NodeMCU on the edge of the breadboard so it can be easily connected to jumper wires.
+    Insert the LED into the Breadboard:
+
+2.  The LED has two legs: one longer leg (anode) and one shorter leg (cathode).
+    Insert the longer leg (anode) into a row on the breadboard.
+    Insert the shorter leg (cathode) into the (-) negative rail of the breadboard. NOTE that the negative rail is divided into two halves, i.e. upper half and lower half are disconnected.
+
+3.  Connect the NodeMCU to the Breadboard:
+    Use a jumper wire to connect the GND pin (ground) on the NodeMCU to the negative (-) rail on second half of the board and connect the shorter leg in the same half of the (-) rail.
+    Take another jumper wire and connect the GPIO16 (refer the Pinout or circuit diagram given) on the NodeMCU to the row where the longer leg (anode) of the LED is inserted.
+    
+4.  Upload the Code:
+    Open Arduino IDE on your computer.
+    Write the code given or copy-paste it into the Arduino IDE.
+
+5.  Select NodeMCU as the board in the Tools > Board menu in the Arduino IDE.
+
+    Select the correct port under Tools > Port.
+    Chose NODEMCU-32S (or a different board if you're using a different Board)
+
+6.  Click the Upload button to upload the code to the NodeMCU. (Connecting the first time, you might need to press RST button of the board)
+
+7.  Power the NodeMCU:
+    Connect the NodeMCU to your computer using the USB cable. It will power up and start running the code.
+8.  Observe the LED Behavior:
+
+    The LED should blink on and off every second, turning on for 1 second, then turning off for 1 second, as programmed in the code.
